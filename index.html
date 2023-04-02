@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <script src="script.js" defer></script> 
+</head>
+<body>
+    <h1>Current Time</h1>
+    <p><span id="dt"></span></p>
+    <p><span id="last"></span></p>
+    <style>
+        #dt {
+            font-size: 150px;
+            color: black;
+        }
+        p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform:translate(-50%,-50%);
+            font-family:'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        h1 {
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform:translate(-50%,-50%);
+        }
+    </style>
+</body>
+</html>
