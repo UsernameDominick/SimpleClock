@@ -1,1 +1,2 @@
 # SimpleClock
+A simple clock.
