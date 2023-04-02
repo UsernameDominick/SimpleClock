@@ -33,6 +33,6 @@ function startTime() {
 startTime();
 var intervalId = window.setInterval(function(){
     startTime();
-  }, 1000);
+  }, 750);
 
 
