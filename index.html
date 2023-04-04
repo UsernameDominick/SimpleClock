@@ -8,16 +8,20 @@
     <script src="script.js" defer></script> 
 </head>
 <body>
-    <p><span id="dt"></span></p>
+    <div class = "tracking-in-expand container">
+        <p><span id="dt"></span></p>
+    </div>
     <style>
-        * {
-            background-color: burlywood;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
         #dt {
             font-size: 150px;
             color: black;
+            font-family: 'Montserrat', sans-serif;
         }
         p {
+            margin: 0px;
+            padding: 0px;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -25,15 +29,38 @@
             font-family: garamond, serif;
             text-align: center;
         }
-        h1 {
-            position: absolute;
-            top: 25%;
-            left: 50%;
-            transform:translate(-50%,-50%);
-        }
         @media screen and (max-width: 850px) {
             #dt {
                 font-size: 50px;
+            }
+        }
+        /*Test */
+        .tracking-in-expand {
+	        -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 5.000) both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 5.000) both;
+        }
+        @-webkit-keyframes tracking-in-expand {
+            0% {
+                letter-spacing: -0.5em;
+                opacity: 0;
+            }
+            40% {
+                opacity: 0.6;
+            }
+            100% {
+                opacity: 1;
+            }
+            }
+            @keyframes tracking-in-expand {
+            0% {
+                letter-spacing: -0.5em;
+                opacity: 0;
+            }
+            40% {
+                opacity: 0.6;
+            }
+            100% {
+                opacity: 1;
             }
         }
     </style>

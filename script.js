@@ -18,15 +18,10 @@ function startTime() {
         second = "0" + second;
     }
 
-    const dateTime = (month + "." + day + "." + year + " " + hour12 + ":" + minute + ":" + "" + second + ":" + milisecond);
+    const dateTime = (month + "." + day + "." + year + " " + hour12 + ":" + minute + ":" + "" + second);
     console.log(dateTime);
 
-    // get's id's, function to manipulate it 
     document.getElementById("dt").innerHTML = dateTime;
-    if(dateTime.indexOf()) {
-        console.log("It works!!")
-    }
-
 }
 
 // timer to call startTime() every second and refresh clock
